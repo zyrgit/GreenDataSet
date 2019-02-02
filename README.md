@@ -25,6 +25,7 @@ System_Time_Millisecond,x-axis,y-axis,z-axis
 1509682461035,-10.435486,-6.60553,-3.3355713
 ...
 ```
+Older trips may not have this file, due to missing sensor readings.
 
 3. gyroscope.txt
 
@@ -55,7 +56,7 @@ GPS_Time_Millisecond,System_Time_Millisecond,GPS_Latitude,GPS_Longitude,GPS_Spee
 1509682465000,1509682463749,40.101431,-88.234798,9.50,189.0,88.9,3.0,0.391,1509.3,33.3,14.12
 ...
 ```
-The `GPS_Time_Millisecond` is given by the GPS samples, which is different from the Android's system time `System_Time_Millisecond`. `GPS_Speed` is in `m/s`, `GPS_Altitude,GPS_Accuracy` is in meters, `GPS_Bearing` is between 0-360, `Fuel_Consumption` is the total fuel (in grams) consumed in this second. `OBD_Speed is in km/s`.
+The `GPS_Time_Millisecond` is given by the GPS samples, which is different from the Android's system time `System_Time_Millisecond`. `GPS_Speed` is in `m/s`, `GPS_Altitude,GPS_Accuracy` is in meters, `GPS_Bearing` is between `0-360` degree, `Fuel_Consumption` is the total fuel (in grams) consumed in this second. `OBD_Speed` is in `km/s`.
 
 
 6. info.txt
@@ -69,6 +70,9 @@ V2 2017-11-02,23:14:22
 7. map.html
 
 This is the vehicle's trip in Google Maps html format, you can view the trip in browser. The red dots are 1Hz trace, the color represents fuel rate (the darker the more fuel in the last second).
+
+
+## A partial overview
 
 ![alt text](https://github.com/zyrgit/mystuff/blob/master/GreenDrive/Traces.png)
 
