@@ -2,6 +2,8 @@
 
 This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. Drivers signed the agreement to release the data. 
 
+We currently released a few dozen trips, we are currently under the process of releasing the whole dataset, which contains thousands of trips. If you have any questions, please send to zhao97@illinois.edu.
+
 ## What is contained in this dataset?
 
 Trips are collected in different times, some are a few years ago, some are more recent. Older trips may have some sensor readings missing. In general, under each trip folder, you can find the following:
@@ -69,7 +71,7 @@ V2 2017-11-02,23:14:22
 
 7. map.html
 
-This is the vehicle's trip in Google Maps html format, you can view the trip in browser. The red dots are 1Hz trace, the color represents fuel rate (the darker the more fuel in the last second).
+This is the vehicle's trip in Google Maps html format, you can view the trip in browser. The red dots are 1Hz trace, the color represents fuel rate (the darker the more fuel in the last second). The blue line is the result of map matching using ORSM API. 
 
 
 ## A partial overview
