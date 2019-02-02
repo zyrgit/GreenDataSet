@@ -7,6 +7,7 @@ This is the driving data collected by UIUC. Each trip under the `./trips` folder
 Trips are collected in different times, some are a few years ago, some are more recent. Older trips may have some sensor readings missing. In general, under each trip folder, you can find the following:
 
 1. accelerometer.txt
+
 This is the Android's acceleration readings:
 ```
 System_Time_Millisecond,x-axis,y-axis,z-axis
@@ -16,6 +17,7 @@ System_Time_Millisecond,x-axis,y-axis,z-axis
 ```
 
 2. magnetometer.txt
+
 This is the Android's magnetometer readings:
 ```
 System_Time_Millisecond,x-axis,y-axis,z-axis
@@ -25,6 +27,7 @@ System_Time_Millisecond,x-axis,y-axis,z-axis
 ```
 
 3. gyroscope.txt
+
 This is the Android's gyroscope readings:
 ```
 System_Time_Millisecond,x-axis,y-axis,z-axis
@@ -34,6 +37,7 @@ System_Time_Millisecond,x-axis,y-axis,z-axis
 ```
 
 4. linear_acceleration.txt
+
 This is the Android's linear acceleration readings, which is acceleration excluding gravity component:
 ```
 System_Time_Millisecond,x-axis,y-axis,z-axis
@@ -43,6 +47,7 @@ System_Time_Millisecond,x-axis,y-axis,z-axis
 ```
 
 5. gps_fuel.txt
+
 This is the OBD interface readings, combined with GPS readings, rendered at 1Hz. 
 ```
 GPS_Time_Millisecond,System_Time_Millisecond,GPS_Latitude,GPS_Longitude,GPS_Speed,GPS_Altitude,GPS_Bearing,GPS_Accuracy,Fuel_Consumption,OBD_Engine_RPM,OBD_Speed,OBD_Throttle_Position
@@ -50,17 +55,21 @@ GPS_Time_Millisecond,System_Time_Millisecond,GPS_Latitude,GPS_Longitude,GPS_Spee
 1509682465000,1509682463749,40.101431,-88.234798,9.50,189.0,88.9,3.0,0.391,1509.3,33.3,14.12
 ...
 ```
+The `GPS_Time_Millisecond` is given by the GPS samples, which is different from the Android's system time `System_Time_Millisecond`. `GPS_Speed` is in `m/s`, `GPS_Altitude,GPS_Accuracy` is in meters, `GPS_Bearing` is between 0-360, `Fuel_Consumption` is the total fuel (in grams) consumed in this second. `OBD_Speed is in km/s`.
+
 
 6. info.txt
-This is the vehicle's ID plus the trip date time. For privacy issues, the vehicle specific make, model, and year is not given. 
+
+This is the vehicle's ID plus the trip date time. For privacy issues, the vehicle specific make, model, and year are not given. 
 ```
 VID Date
 V2 2017-11-02,23:14:22
-...
 ```
 
 7. map.html
+
 This is the vehicle's trip in Google Maps html format, you can view the trip in browser. The red dots are 1Hz trace, the color represents fuel rate (the darker the more fuel in the last second).
 
+![alt text](https://github.com/zyrgit/mystuff/blob/master/GreenDrive/Traces.png)
 
 
