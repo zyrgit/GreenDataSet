@@ -1,8 +1,9 @@
 # GreenDataSet
 
-This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. Drivers signed the agreement to release the data. This is not a "human subject research", and no personal information is in this release.
+This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. This is not human subject research (it is research on performance of vehicle-related systems, not humans), and no personal information is in this release.
 
 We currently released a few dozen trips, we are currently under the process of releasing the whole dataset, which contains thousands of trips. If you have any questions, please send to zhao97@illinois.edu.
+
 
 
 ## What is contained in this dataset?
@@ -73,6 +74,35 @@ V2 2017-11-02,23:14:22
 7. map.html
 
 This is the vehicle's trip in Google Maps html format, you can view the trip in browser. The red dots are 1Hz trace, the color represents fuel rate (the darker the more fuel in the last second). The blue line is the result of map matching using ORSM API. 
+
+
+
+## This data is released free of charge. However, to use the data in a publication, please cite any of the following papers:
+```
+@inproceedings{zhao2017greendrive,
+  title={Greendrive: A smartphone-based intelligent speed adaptation system with real-time traffic signal prediction},
+  author={Zhao, Yiran and Li, Shen and Hu, Shaohan and Su, Lu and Yao, Shuochao and Shao, Huajie and Wang, Hongwei and Abdelzaher, Tarek},
+  booktitle={Cyber-Physical Systems (ICCPS), 2017 ACM/IEEE 8th International Conference on},
+  pages={229--238},
+  year={2017},
+  organization={IEEE}
+}
+@article{saremi2016experiences,
+  title={Experiences with greengps—fuel-efficient navigation using participatory sensing},
+  author={Saremi, Fatemeh and Fatemieh, Omid and Ahmadi, Hossein and Wang, Hongyan and Abdelzaher, Tarek and Ganti, Raghu and Liu, Hengchang and Hu, Shaohan and Li, Shen and Su, Lu},
+  journal={IEEE Transactions on Mobile Computing},
+  volume={15},
+  number={3},
+  pages={672--689},
+  year={2016},
+  publisher={IEEE}
+}
+```
+
+
+## Data Usage
+
+We encourage people to use this dataset for research purposes related to cyber-physical systems, machine learning, Internet-of-Things, etc. For example, we are using this dataset to build a fuel-saving vehicle routing system which can be deployed potentially in any city. You can use the data to train fuel consumption models based on features from OSM data and OSRM API. You can utilize multi-modal sensor data to train models that detect bad driving behaviors, or help calculate vehicle position in cases where GPS signal is not available in tunnels or Manhattanized areas. You can dive deep into the data and find interesting correlations between the different sensor sources, or you can find correlated phenomena around some points of interest, or around certain time of day. We would love to see smart city related systems come to live!
 
 
 ## A partial overview
