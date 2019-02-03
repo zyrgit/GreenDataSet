@@ -1,8 +1,9 @@
 # GreenDataSet
 
-This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. Drivers signed the agreement to release the data. 
+This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. Drivers signed the agreement to release the data. This is not a "human subject research", and no personal information is in this release.
 
 We currently released a few dozen trips, we are currently under the process of releasing the whole dataset, which contains thousands of trips. If you have any questions, please send to zhao97@illinois.edu.
+
 
 ## What is contained in this dataset?
 
