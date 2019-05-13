@@ -1,8 +1,8 @@
 # GreenDataSet
 
-This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. This is not human subject research (it is research on performance of vehicle-related systems, not humans), and no personal information is in this release.
+This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. If there are multiple segments of the same trip, its filename may end with a letter as well. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. This is not human subject research (it is research on performance of vehicle-related systems, not humans), and no personal information is in this release.
 
-We currently released a few dozen trips, we are currently under the process of releasing the whole dataset, which contains thousands of trips. If you have any questions, please send to zhao97@illinois.edu.
+We currently released around 2400 trips, all compressed in `.tar.gz` format. If you have any questions, please send to zhao97@illinois.edu.
 
 
 
@@ -29,7 +29,7 @@ System_Time_Millisecond,x-axis,y-axis,z-axis
 1509682461035,-10.435486,-6.60553,-3.3355713
 ...
 ```
-Older trips may not have this file, due to missing sensor readings.
+Older trips (the first ones you see under the trips folder) may not have this file, due to missing sensor readings.
 
 3. gyroscope.txt
 
@@ -65,10 +65,10 @@ The `GPS_Time_Millisecond` is given by the GPS samples, which is different from 
 
 6. info.txt
 
-This is the vehicle's ID plus the trip date time. For privacy issues, the vehicle specific make, model, and year are not given. 
+This is the vehicle's ID, type, and the trip date time. For privacy issues, the vehicle specific make, model, and year are not given. 
 ```
-VID Date
-V2 2017-11-02,23:14:22
+VID, Type, Date
+T1,Mid-size Sedan,2012-03-14,14:15:53
 ```
 
 7. map.html
@@ -103,6 +103,10 @@ This is the vehicle's trip in Google Maps html format, you can view the trip in 
 ## Data Usage
 
 We encourage people to use this dataset for research purposes related to cyber-physical systems, machine learning, Internet-of-Things, etc. For example, we are using this dataset to build a fuel-saving vehicle routing system which can be deployed potentially in any city. You can use the data to train fuel consumption models based on features from OSM data and OSRM API. You can utilize multi-modal sensor data to train models that detect bad driving behaviors, or help calculate vehicle position in cases where GPS signal is not available in tunnels or Manhattanized areas. You can dive deep into the data and find interesting correlations between the different sensor sources, or you can find correlated phenomena around some points of interest, or around certain time of day. We would love to see smart city related systems come to live!
+
+## Additional Information
+
+There is a website describing how we collected the data recently. See http://greengps.cs.illinois.edu/green/index
 
 
 ## A partial overview
