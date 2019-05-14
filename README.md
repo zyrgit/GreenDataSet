@@ -79,6 +79,13 @@ This is the vehicle's trip in Google Maps html format, you can view the trip in 
 
 ## This data is released free of charge. However, to use the data in a publication, please cite any of the following papers:
 ```
+@inproceedings{zhao2019greenroute,
+  title={GreenRoute: A Generalizable Fuel-Saving Vehicular Navigation Service},
+  author={Zhao, Yiran and Yao, Shuochao and Liu, Dongxin and Shao, Huajie and Liu, Shengzhong and Abdelzaher, Tarek},
+  booktitle={2019 IEEE International Conference on Autonomic Computing (ICAC)},
+  year={2019},
+  organization={IEEE}
+}
 @inproceedings{zhao2017greendrive,
   title={Greendrive: A smartphone-based intelligent speed adaptation system with real-time traffic signal prediction},
   author={Zhao, Yiran and Li, Shen and Hu, Shaohan and Su, Lu and Yao, Shuochao and Shao, Huajie and Wang, Hongwei and Abdelzaher, Tarek},
@@ -86,16 +93,6 @@ This is the vehicle's trip in Google Maps html format, you can view the trip in 
   pages={229--238},
   year={2017},
   organization={IEEE}
-}
-@article{saremi2016experiences,
-  title={Experiences with greengps—fuel-efficient navigation using participatory sensing},
-  author={Saremi, Fatemeh and Fatemieh, Omid and Ahmadi, Hossein and Wang, Hongyan and Abdelzaher, Tarek and Ganti, Raghu and Liu, Hengchang and Hu, Shaohan and Li, Shen and Su, Lu},
-  journal={IEEE Transactions on Mobile Computing},
-  volume={15},
-  number={3},
-  pages={672--689},
-  year={2016},
-  publisher={IEEE}
 }
 ```
 
