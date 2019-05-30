@@ -89,7 +89,7 @@ This is the vehicle's trip in Google Maps html format, you can view the trip in 
 @inproceedings{zhao2017greendrive,
   title={Greendrive: A smartphone-based intelligent speed adaptation system with real-time traffic signal prediction},
   author={Zhao, Yiran and Li, Shen and Hu, Shaohan and Su, Lu and Yao, Shuochao and Shao, Huajie and Wang, Hongwei and Abdelzaher, Tarek},
-  booktitle={Cyber-Physical Systems (ICCPS), 2017 ACM/IEEE 8th International Conference on},
+  booktitle={2017 ACM/IEEE 8th International Conference on Cyber-Physical Systems (ICCPS)},
   pages={229--238},
   year={2017},
   organization={IEEE}
