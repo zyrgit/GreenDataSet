@@ -2,7 +2,8 @@
 
 This is the driving data collected by UIUC. Each trip under the `./trips` folder is named by its `timestamp`. If there are multiple segments of the same trip, its filename may end with a letter as well. The trip data consists of sensor data collected from in-vehicle smartphones and OBD interface. This is not human subject research (it is research on performance of vehicle-related systems, not humans), and no personal information is in this release.
 
-We currently released around 2400 trips, all compressed in `.tar.gz` format. If you have any questions, please send to zhao97@illinois.edu.
+There are around 2400 trips in this dataset, all compressed in `.tar.gz` format. They are collected from about 27 vehicles in about 7 U.S. cities, including urban streets and highways. 
+If you have any questions, please send to zhao97@illinois.edu.
 
 
 
